@@ -138,7 +138,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Nom</FormLabel>
                   <FormControl>
                     <Input placeholder="Categorie" {...field} />
                   </FormControl>
@@ -154,7 +154,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
               name="icon"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Icon</FormLabel>
+                  <FormLabel>Icone</FormLabel>
                   <FormControl>
                     <Popover>
                       <PopoverTrigger asChild>
