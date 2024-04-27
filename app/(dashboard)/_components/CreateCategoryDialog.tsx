@@ -117,16 +117,15 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
-            Create
+          Crée une  Catégorie de
             <span
               className={cn(
                 "m-1",
                 type === "income" ? "text-emerald-500" : "text-red-500"
               )}
             >
-              {type}
+              {type === "income" ? "revenu" : "dépense"}
             </span>
-            Catégorie
           </DialogTitle>
           <DialogDescription>
           Les catégories sont utilisées pour regrouper vos transactions
@@ -141,7 +140,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Category" {...field} />
+                    <Input placeholder="Categorie" {...field} />
                   </FormControl>
                   <FormDescription>
                   Voici comment votre catégorie apparaîtra sur wise money
