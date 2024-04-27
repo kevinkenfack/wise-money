@@ -18,7 +18,7 @@ function Overview({ userSettings }: { userSettings: UserSettings }) {
   return (
     <>
       <div className="container flex flex-wrap items-end justify-between gap-2 py-6">
-        <h2 className="text-3xl font-bold">Overview</h2>
+        <h2 className="text-3xl font-bold">Aperçu général</h2>
         <div className="flex items-center gap-3">
           <DateRangePicker
             initialDateFrom={dateRange.from}
@@ -31,7 +31,7 @@ function Overview({ userSettings }: { userSettings: UserSettings }) {
               if (!from || !to) return;
               if (differenceInDays(to, from) > MAX_DATE_RANGE_DAYS) {
                 toast.error(
-                  `La plage de dates sélectionnée est trop grande. La plage maximale autorisée est de ${MAX_DATE_RANGE_DAYS} days!`
+                  `La plage de dates sélectionnée est trop grande. La plage maximale autorisée est de ${MAX_DATE_RANGE_DAYS} jours!`
                 );
                 return;
               }

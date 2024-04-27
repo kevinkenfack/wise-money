@@ -73,7 +73,7 @@ function CategoriesCard({
     <Card className="h-80 w-full col-span-6">
       <CardHeader>
         <CardTitle className="grid grid-flow-row justify-between gap-2 text-muted-foreground md:grid-flow-col">
-          {type === "income" ? "Incomes" : "Expenses"} par categorie
+          {type === "income" ? "Revenue" : "Dépenses"} par categorie
         </CardTitle>
       </CardHeader>
 
@@ -82,8 +82,8 @@ function CategoriesCard({
           <div className="flex h-60 w-full flex-col items-center justify-center">
             Pas de données pour la période sélectionnée
             <p className="text-sm text-muted-foreground">
-            Essayez de sélectionner une autre période ou ajouter de nouvelles{" "}
-              {type === "income" ? "incomes" : "expenses"}
+            Essayez de sélectionner une autre période ou ajouter une nouvelle{" "}
+              {type === "income" ? "Revenue" : "Dépenses"}
             </p>
           </div>
         )}

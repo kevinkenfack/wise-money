@@ -32,7 +32,7 @@ export function ThemeSwitcherBtn() {
           Sombre
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
-          Systeme
+          Système
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

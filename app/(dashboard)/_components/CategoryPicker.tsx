@@ -67,7 +67,7 @@ function CategoryPicker({ type, onChange }: Props) {
           {selectedCategory ? (
             <CategoryRow category={selectedCategory} />
           ) : (
-            "Select category"
+            "Sélectionner une catégorie"
           )}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
@@ -78,7 +78,7 @@ function CategoryPicker({ type, onChange }: Props) {
             e.preventDefault();
           }}
         >
-          <CommandInput placeholder="Search category..." />
+          <CommandInput placeholder="Chercher une catégorie" />
           <CreateCategoryDialog type={type} successCallback={successCallback} />
           <CommandEmpty>
             <p>catégorie introuvable</p>

@@ -70,7 +70,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
         type,
       });
 
-      toast.success(`Category ${data.name} created successfully 🎉`, {
+      toast.success(`Category ${data.name} créé avec succès 🎉`, {
         id: "create-category",
       });
 
@@ -83,7 +83,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
       setOpen((prev) => !prev);
     },
     onError: () => {
-      toast.error("Something went wrong", {
+      toast.error("Quelque chose ne fonctione pas", {
         id: "create-category",
       });
     },
@@ -91,7 +91,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
 
   const onSubmit = useCallback(
     (values: CreateCategorySchemaType) => {
-      toast.loading("Creating category...", {
+      toast.loading("Création de la catégorie...", {
         id: "create-category",
       });
       mutate(values);
@@ -126,7 +126,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
             >
               {type}
             </span>
-            categorie
+            Catégorie
           </DialogTitle>
           <DialogDescription>
           Les catégories sont utilisées pour regrouper vos transactions
@@ -144,7 +144,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
                     <Input placeholder="Category" {...field} />
                   </FormControl>
                   <FormDescription>
-                  Voici comment votre catégorie apparaîtra dans money wise
+                  Voici comment votre catégorie apparaîtra sur wise money
                   </FormDescription>
                 </FormItem>
               )}
@@ -194,7 +194,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
                     </Popover>
                   </FormControl>
                   <FormDescription>
-                   Voici comment votre catégorie apparaîtra sur money wise
+                   Voici comment votre catégorie apparaîtra sur wise money
                   </FormDescription>
                 </FormItem>
               )}

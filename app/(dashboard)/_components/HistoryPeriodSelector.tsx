@@ -40,8 +40,8 @@ function HistoryPeriodSelector({
           onValueChange={(value) => setTimeframe(value as Timeframe)}
         >
           <TabsList>
-            <TabsTrigger value="year">Year</TabsTrigger>
-            <TabsTrigger value="month">Month</TabsTrigger>
+            <TabsTrigger value="year">Année</TabsTrigger>
+            <TabsTrigger value="month">Mois</TabsTrigger>
           </TabsList>
         </Tabs>
       </SkeletonWrapper>

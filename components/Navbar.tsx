@@ -22,7 +22,7 @@ function Navbar() {
 const items = [
   { label: "Tableau de bord", link: "/" },
   { label: "Transactions", link: "/transactions" },
-  { label: "Parametres", link: "/manage" },
+  { label: "Paramètres", link: "/manage" },
 ];
 
 function MobileNavbar() {

@@ -41,7 +41,7 @@ export interface DateRangePickerProps {
   showCompare?: boolean;
 }
 
-const formatDate = (date: Date, locale: string = "en-us"): string => {
+const formatDate = (date: Date, locale: string = "fr-fr"): string => {
   return date.toLocaleDateString(locale, {
     month: "short",
     day: "numeric",
@@ -75,15 +75,15 @@ interface Preset {
 
 // Define presets
 const PRESETS: Preset[] = [
-  { name: "today", label: "Today" },
-  { name: "yesterday", label: "Yesterday" },
-  { name: "last7", label: "Last 7 days" },
-  { name: "last14", label: "Last 14 days" },
-  { name: "last30", label: "Last 30 days" },
-  { name: "thisWeek", label: "This Week" },
-  { name: "lastWeek", label: "Last Week" },
-  { name: "thisMonth", label: "This Month" },
-  { name: "lastMonth", label: "Last Month" },
+  { name: "today", label: "Aujourd&apos;hui" },
+  { name: "yesterday", label: "Hier" },
+  { name: "last7", label: "Les 7 derniers jours" },
+  { name: "last14", label: "Les 14 derniers jours" },
+  { name: "last30", label: "Les 30 derniers jours" },
+  { name: "thisWeek", label: "Cette semaine" },
+  { name: "lastWeek", label: "La semaine dernière" },
+  { name: "thisMonth", label: "Ce mois-ci" },
+  { name: "lastMonth", label: "Le mois dernier" },
 ];
 
 /** The DateRangePicker component allows a user to select a range of dates */
@@ -96,7 +96,7 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
   initialCompareTo,
   onUpdate,
   align = "end",
-  locale = "en-US",
+  locale = "fr-FR",
   showCompare = true,
 }): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
@@ -145,7 +145,7 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
 
   const getPresetRange = (presetName: string): DateRange => {
     const preset = PRESETS.find(({ name }) => name === presetName);
-    if (!preset) throw new Error(`Unknown date range preset: ${presetName}`);
+    if (!preset) throw new Error(`Plage de dates inconnue prédéfinie: ${presetName}`);
     const from = new Date();
     const to = new Date();
     const first = from.getDate() - from.getDay();
@@ -549,7 +549,7 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
             }}
             variant="ghost"
           >
-            Cancel
+            Annuler
           </Button>
           <Button
             onClick={() => {
@@ -562,7 +562,7 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
               }
             }}
           >
-            Update
+            Mettre a jour
           </Button>
         </div>
       </PopoverContent>

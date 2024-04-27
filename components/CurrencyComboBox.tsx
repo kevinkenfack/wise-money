@@ -48,7 +48,7 @@ export function CurrencyComboBox() {
   const mutation = useMutation({
     mutationFn: UpdateUserCurrency,
     onSuccess: (data: UserSettings) => {
-      toast.success(`Devise mise a jour avec succes 🎉`, {
+      toast.success(`Devise mise à jour avec succès. 🎉`, {
         id: "update-currency",
       });
 
@@ -58,7 +58,7 @@ export function CurrencyComboBox() {
     },
     onError: (e) => {
       console.error(e);
-      toast.error("Quelque chose n'a pas fonctionné", {
+      toast.error("Quelque chose a mal fonctionné.", {
         id: "update-currency",
       });
     },
@@ -67,7 +67,7 @@ export function CurrencyComboBox() {
   const selectOption = React.useCallback(
     (currency: Currency | null) => {
       if (!currency) {
-        toast.error("svp selectioner une devise");
+        toast.error("Svp sélectionnez une devise");
         return;
       }
 
@@ -132,9 +132,9 @@ function OptionList({
 }) {
   return (
     <Command>
-      <CommandInput placeholder="Filter currency..." />
+      <CommandInput placeholder="Filtrer les devises..." />
       <CommandList>
-        <CommandEmpty>pas de resultat trover.</CommandEmpty>
+        <CommandEmpty>Pas de résultat trouvé.</CommandEmpty>
         <CommandGroup>
           {Currencies.map((currency: Currency) => (
             <CommandItem

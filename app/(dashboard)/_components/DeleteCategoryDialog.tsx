@@ -30,7 +30,7 @@ function DeleteCategoryDialog({ category, trigger }: Props) {
   const deleteMutation = useMutation({
     mutationFn: DeleteCategory,
     onSuccess: async () => {
-      toast.success("Category deleted successfully", {
+      toast.success("Catégorie supprimée avec succès", {
         id: categoryIdentifier,
       });
 
@@ -39,7 +39,7 @@ function DeleteCategoryDialog({ category, trigger }: Props) {
       });
     },
     onError: () => {
-      toast.error("Something went wrong", {
+      toast.error("Quelque chose a mal tourné", {
         id: categoryIdentifier,
       });
     },
@@ -49,16 +49,16 @@ function DeleteCategoryDialog({ category, trigger }: Props) {
       <AlertDialogTrigger asChild>{trigger}</AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Tu est sur ?</AlertDialogTitle>
+          <AlertDialogTitle>Tu es sur ?</AlertDialogTitle>
           <AlertDialogDescription>
-          Cette action ne peut être annulée. Cette action supprimera définitivement votre catégorie
+          Cette action ne peut être annulée, elle supprimera définitivement votre catégorie.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Annuler</AlertDialogCancel>
           <AlertDialogAction
             onClick={() => {
-              toast.loading("Deleting category...", {
+              toast.loading("Suppression de la catégorie...", {
                 id: categoryIdentifier,
               });
               deleteMutation.mutate({
