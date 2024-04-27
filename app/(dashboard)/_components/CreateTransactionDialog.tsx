@@ -110,7 +110,7 @@ function CreateTransactionDialog({ trigger, type }: Props) {
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
-           Créer un nouveau{" "}
+           Ajouter un nouveau{" "}
             <span
               className={cn(
                 "m-1",
@@ -119,7 +119,6 @@ function CreateTransactionDialog({ trigger, type }: Props) {
             >
               {type}
             </span>
-            Transaction
           </DialogTitle>
         </DialogHeader>
         <Form {...form}>
@@ -149,7 +148,7 @@ function CreateTransactionDialog({ trigger, type }: Props) {
                     <Input defaultValue={0} type="number" {...field} />
                   </FormControl>
                   <FormDescription>
-                    Montant de la transaction (required)
+                    Montant de la transaction (requis)
                   </FormDescription>
                 </FormItem>
               )}

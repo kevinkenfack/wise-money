@@ -36,7 +36,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
       });
     },
     onError: () => {
-      toast.error("Quelque chose n'a pas marché", {
+      toast.error("Quelque chose fonctione mal", {
         id: transactionId,
       });
     },
@@ -55,7 +55,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
           <AlertDialogCancel>Cancel</AlertDialogCancel>
           <AlertDialogAction
             onClick={() => {
-              toast.loading("Deleting transaction...", {
+              toast.loading("Suppression de la transaction...", {
                 id: transactionId,
               });
               deleteMutation.mutate(transactionId);

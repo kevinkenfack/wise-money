@@ -198,8 +198,8 @@ function TransactionTable({ from, to }: Props) {
               title="Type"
               column={table.getColumn("type")}
               options={[
-                { label: "Income", value: "income" },
-                { label: "Expense", value: "expense" },
+                { label: "Revenue", value: "income" },
+                { label: "Depense", value: "expense" },
               ]}
             />
           )}
@@ -223,7 +223,7 @@ function TransactionTable({ from, to }: Props) {
             }}
           >
             <DownloadIcon className="mr-2 h-4 w-4" />
-            Export CSV
+           Exporter en CSV
           </Button>
           <DataTableViewOptions table={table} />
         </div>
@@ -272,7 +272,7 @@ function TransactionTable({ from, to }: Props) {
                     colSpan={columns.length}
                     className="h-24 text-center"
                   >
-                    No results.
+                    Aucun résultat.
                   </TableCell>
                 </TableRow>
               )}
@@ -286,7 +286,7 @@ function TransactionTable({ from, to }: Props) {
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
           >
-            Previous
+            Précédent
           </Button>
           <Button
             variant="outline"
@@ -294,7 +294,7 @@ function TransactionTable({ from, to }: Props) {
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
           >
-            Next
+           Suivant
           </Button>
         </div>
       </SkeletonWrapper>
@@ -317,7 +317,7 @@ function RowActions({ transaction }: { transaction: TransactionHistoryRow }) {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant={"ghost"} className="h-8 w-8 p-0 ">
-            <span className="sr-only">Open menu</span>
+            <span className="sr-only">Ouvir le menu</span>
             <MoreHorizontal className="h-4 w-4" />
           </Button>
         </DropdownMenuTrigger>
@@ -331,7 +331,7 @@ function RowActions({ transaction }: { transaction: TransactionHistoryRow }) {
             }}
           >
             <TrashIcon className="h-4 w-4 text-muted-foreground" />
-            Delete
+            Supprimer
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
