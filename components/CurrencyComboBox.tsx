@@ -110,7 +110,7 @@ export function CurrencyComboBox() {
             className="w-full justify-start"
             disabled={mutation.isPending}
           >
-            {selectedOption ? <>{selectedOption.label}</> : <>Set currency</>}
+            {selectedOption ? <>{selectedOption.label}</> : <>Définir la devise</>}
           </Button>
         </DrawerTrigger>
         <DrawerContent>
