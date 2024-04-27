@@ -167,7 +167,7 @@ function History({ userSettings }: { userSettings: UserSettings }) {
               <Card className="flex h-[300px] flex-col items-center justify-center bg-background">
                 Pas de données pour la période sélectionnée
                 <p className="text-sm text-muted-foreground">
-                Essayez de sélectionner une autre période ou d'ajouter de nouvelles transactions
+                Essayez de sélectionner une autre période ou ajouter de nouvelles transactions
                 </p>
               </Card>
             )}

@@ -144,7 +144,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
                     <Input placeholder="Category" {...field} />
                   </FormControl>
                   <FormDescription>
-                  Voici comment votre catégorie apparaîtra dans l'application
+                  Voici comment votre catégorie apparaîtra dans money wise
                   </FormDescription>
                 </FormItem>
               )}
@@ -194,7 +194,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
                     </Popover>
                   </FormControl>
                   <FormDescription>
-                   Voici comment votre catégorie apparaîtra dans l'application
+                   Voici comment votre catégorie apparaîtra sur money wise
                   </FormDescription>
                 </FormItem>
               )}

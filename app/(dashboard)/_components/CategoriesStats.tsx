@@ -82,7 +82,7 @@ function CategoriesCard({
           <div className="flex h-60 w-full flex-col items-center justify-center">
             Pas de données pour la période sélectionnée
             <p className="text-sm text-muted-foreground">
-            Essayez de sélectionner une autre période ou d'ajouter de nouvelles{" "}
+            Essayez de sélectionner une autre période ou ajouter de nouvelles{" "}
               {type === "income" ? "incomes" : "expenses"}
             </p>
           </div>
