@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "Gérez vos finances personnelles facilement avec Wise Money.",
     url: "https://wise-money.vercel.app",
     siteName: "Wise money",
-    images: "https://wise-money.vercel.app/public/og-image.jpg",
+    images: "https://wise-money.vercel.app/og-image.jpg",
   }
 };
 
