@@ -115,7 +115,7 @@ const columns: ColumnDef<TransactionHistoryRow>[] = [
   {
     accessorKey: "amount",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Amount" />
+      <DataTableColumnHeader column={column} title="Montant" />
     ),
     cell: ({ row }) => (
       <p className="text-md rounded-lg bg-gray-400/5 p-2 text-center font-medium">
@@ -188,7 +188,7 @@ function TransactionTable({ from, to }: Props) {
         <div className="flex gap-2">
           {table.getColumn("category") && (
             <DataTableFacetedFilter
-              title="Category"
+              title="Categorie"
               column={table.getColumn("category")}
               options={categoriesOptions}
             />

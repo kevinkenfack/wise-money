@@ -142,14 +142,14 @@ function History({ userSettings }: { userSettings: UserSettings }) {
                   />
                   <Bar
                     dataKey={"income"}
-                    label="Income"
+                    label="Revenue"
                     fill="url(#incomeBar)"
                     radius={4}
                     className="cursor-pointer"
                   />
                   <Bar
                     dataKey={"expense"}
-                    label="Expense"
+                    label="Depense"
                     fill="url(#expenseBar)"
                     radius={4}
                     className="cursor-pointer"
