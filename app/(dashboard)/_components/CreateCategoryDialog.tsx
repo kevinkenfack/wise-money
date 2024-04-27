@@ -117,7 +117,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
-          Crée une  Catégorie de
+          Crée une catégorie de
             <span
               className={cn(
                 "m-1",
@@ -213,7 +213,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
             </Button>
           </DialogClose>
           <Button onClick={form.handleSubmit(onSubmit)} disabled={isPending}>
-            {!isPending && "Create"}
+            {!isPending && "Créer"}
             {isPending && <Loader2 className="animate-spin" />}
           </Button>
         </DialogFooter>
