@@ -77,7 +77,7 @@ function CategoryList({ type }: { type: TransactionType }) {
                 <TrendingUp className="h-12 w-12 items-center rounded-lg bg-emerald-400/10 p-2 text-emerald-500" />
               )}
               <div>
-                {type === "income" ? "Incomes" : "Expenses"} categories
+               Categories de {type === "income" ? "revenue" : "dépenses"} 
                 <div className="text-sm text-muted-foreground">
                 Classés par nom
                 </div>
@@ -100,17 +100,17 @@ function CategoryList({ type }: { type: TransactionType }) {
         {!dataAvailable && (
           <div className="flex h-40 w-full flex-col items-center justify-center">
             <p>
-              Non
-              <span
-                className={cn(
-                  "m-1",
-                  type === "income" ? "text-emerald-500" : "text-red-500"
-                )}
-              >
-                {type}
-              </span>
-              encore des catégories
-            </p>
+            Pas encore de catégories de{" "}
+            <span
+              className={cn(
+                "m-1",
+                type === "income" ? "text-emerald-500" : "text-red-500"
+              )}
+            >
+              {type === "income" ? "revenu" : "dépense"}
+            </span>
+          </p>
+
 
             <p className="text-sm text-muted-foreground">
             Créez une pour commencer
