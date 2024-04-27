@@ -109,17 +109,17 @@ function CreateTransactionDialog({ trigger, type }: Props) {
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>
-           Ajouter un nouveau{" "}
-            <span
-              className={cn(
-                "m-1",
-                type === "income" ?   "text-emerald-500" : "text-red-500"
-              )}
-            >
-              {type}
-            </span>
-          </DialogTitle>
+        <DialogTitle>
+        Ajouter un(e){" "}
+        <span
+          className={cn(
+            "m-1",
+            type === "income" ? "text-emerald-500" : "text-red-500"
+          )}
+        >
+          {type === "income" ? "revenu" : "dépense"}
+      </span>
+  </DialogTitle>
         </DialogHeader>
         <Form {...form}>
           <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
