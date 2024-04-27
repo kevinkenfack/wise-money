@@ -17,7 +17,7 @@ export const openGraph: OpenGraph = {
   description: "Gérez vos finances personnelles facilement avec Wise Money.",
   url: "https://wise-money.vercel.app",
   siteName: "Wise Money",
-  images: ["https://wise-money.vercel.app/og-image.jpg"],
+  images: "https://wise-money.vercel.app/og-image.jpg",
 }
 
 export default function RootLayout({
