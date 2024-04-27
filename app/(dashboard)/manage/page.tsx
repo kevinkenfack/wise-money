@@ -27,9 +27,9 @@ function page() {
       <div className="border-b bg-card">
         <div className="container flex flex-wrap items-center justify-between gap-6 py-8">
           <div>
-            <p className="text-3xl font-bold">Manage</p>
+            <p className="text-3xl font-bold">Parametre</p>
             <p className="text-muted-foreground">
-              Manage your account settings and categories
+             Gérer les paramètres et les catégories de votre compte
             </p>
           </div>
         </div>
@@ -38,9 +38,9 @@ function page() {
       <div className="container flex flex-col gap-4 p-4">
         <Card>
           <CardHeader>
-            <CardTitle>Currency</CardTitle>
+            <CardTitle>Devise</CardTitle>
             <CardDescription>
-              Set your default currency for transactions
+            Définir la devise par défaut pour les transactions
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -79,7 +79,7 @@ function CategoryList({ type }: { type: TransactionType }) {
               <div>
                 {type === "income" ? "Incomes" : "Expenses"} categories
                 <div className="text-sm text-muted-foreground">
-                  Sorted by name
+                Classés par nom
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ function CategoryList({ type }: { type: TransactionType }) {
               trigger={
                 <Button className="gap-2 text-sm">
                   <PlusSquare className="h-4 w-4" />
-                  Create category
+                  Créer une catégorie
                 </Button>
               }
             />
@@ -100,7 +100,7 @@ function CategoryList({ type }: { type: TransactionType }) {
         {!dataAvailable && (
           <div className="flex h-40 w-full flex-col items-center justify-center">
             <p>
-              No
+              Non
               <span
                 className={cn(
                   "m-1",
@@ -109,11 +109,11 @@ function CategoryList({ type }: { type: TransactionType }) {
               >
                 {type}
               </span>
-              categories yet
+              encore des catégories
             </p>
 
             <p className="text-sm text-muted-foreground">
-              Create one to get started
+            Créez une pour commencer
             </p>
           </div>
         )}
@@ -146,7 +146,7 @@ function CategoryCard({ category }: { category: Category }) {
             variant={"secondary"}
           >
             <TrashIcon className="h-4 w-4" />
-            Remove
+            Supprimer
           </Button>
         }
       />

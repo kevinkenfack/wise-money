@@ -49,14 +49,13 @@ function DeleteCategoryDialog({ category, trigger }: Props) {
       <AlertDialogTrigger asChild>{trigger}</AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogTitle>Tu est sur ?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            category
+          Cette action ne peut être annulée. Cette action supprimera définitivement votre catégorie
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>Annuler</AlertDialogCancel>
           <AlertDialogAction
             onClick={() => {
               toast.loading("Deleting category...", {
@@ -68,7 +67,7 @@ function DeleteCategoryDialog({ category, trigger }: Props) {
               });
             }}
           >
-            Continue
+            Continuer
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

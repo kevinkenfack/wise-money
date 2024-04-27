@@ -31,7 +31,7 @@ function Overview({ userSettings }: { userSettings: UserSettings }) {
               if (!from || !to) return;
               if (differenceInDays(to, from) > MAX_DATE_RANGE_DAYS) {
                 toast.error(
-                  `The selected date range is too big. Max allowed range is ${MAX_DATE_RANGE_DAYS} days!`
+                  `La plage de dates sélectionnée est trop grande. La plage maximale autorisée est de ${MAX_DATE_RANGE_DAYS} days!`
                 );
                 return;
               }

@@ -27,7 +27,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
   const deleteMutation = useMutation({
     mutationFn: DeleteTransaction,
     onSuccess: async () => {
-      toast.success("Transaction deleted successfully", {
+      toast.success("Transaction supprimée avec succès", {
         id: transactionId,
       });
 
@@ -36,7 +36,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
       });
     },
     onError: () => {
-      toast.error("Something went wrong", {
+      toast.error("Quelque chose n'a pas marché", {
         id: transactionId,
       });
     },
@@ -45,10 +45,10 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogTitle>Êtes-vous sûr ?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            transaction
+          Cette action ne peut être annulée. Cette action supprimera définitivement votre
+          transaction
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
@@ -61,7 +61,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
               deleteMutation.mutate(transactionId);
             }}
           >
-            Continue
+            Continuer
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

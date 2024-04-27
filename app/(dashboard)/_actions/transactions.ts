@@ -28,7 +28,7 @@ export async function CreateTransaction(form: CreateTransactionSchemaType) {
   });
 
   if (!categoryRow) {
-    throw new Error("category not found");
+    throw new Error("catégorie non trouvée");
   }
 
   // NOTE: don't make confusion between $transaction ( prisma ) and prisma.transaction (table)

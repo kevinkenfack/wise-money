@@ -45,7 +45,7 @@ async function getTransactionsHistory(userId: string, from: Date, to: Date) {
     },
   });
   if (!userSettings) {
-    throw new Error("user settings not found");
+    throw new Error("paramètres de l'utilisateur introuvables");
   }
 
   const formatter = GetFormatterForCurrency(userSettings.currency);

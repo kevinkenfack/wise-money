@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html
-        lang="en"
+        lang="fr"
         className="dark"
         style={{
           colorScheme: "dark",

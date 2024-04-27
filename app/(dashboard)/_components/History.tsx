@@ -45,7 +45,7 @@ function History({ userSettings }: { userSettings: UserSettings }) {
 
   return (
     <div className="container">
-      <h2 className="mt-12 text-3xl font-bold">History</h2>
+      <h2 className="mt-12 text-3xl font-bold">Historique</h2>
       <Card className="col-span-12 mt-2 w-full">
         <CardHeader className="gap-2">
           <CardTitle className="grid grid-flow-row justify-between gap-2 md:grid-flow-col">
@@ -62,14 +62,14 @@ function History({ userSettings }: { userSettings: UserSettings }) {
                 className="flex items-center gap-2 text-sm"
               >
                 <div className="h-4 w-4 rounded-full bg-emerald-500"></div>
-                Income
+                Revenue
               </Badge>
               <Badge
                 variant={"outline"}
                 className="flex items-center gap-2 text-sm"
               >
                 <div className="h-4 w-4 rounded-full bg-red-500"></div>
-                Expense
+                Depense
               </Badge>
             </div>
           </CardTitle>
@@ -165,9 +165,9 @@ function History({ userSettings }: { userSettings: UserSettings }) {
             )}
             {!dataAvailable && (
               <Card className="flex h-[300px] flex-col items-center justify-center bg-background">
-                No data for the selected period
+                Pas de données pour la période sélectionnée
                 <p className="text-sm text-muted-foreground">
-                  Try selecting a different period or adding new transactions
+                Essayez de sélectionner une autre période ou d'ajouter de nouvelles transactions
                 </p>
               </Card>
             )}
