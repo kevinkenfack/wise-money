@@ -11,14 +11,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Wise money",
   description: "Gérez vos finances personnelles facilement avec Wise Money.",
+  openGraph: {
+    title: "Wise money",
+    description: "Gérez vos finances personnelles facilement avec Wise Money.",
+    url: "https://wise-money.vercel.app",
+    siteName: "Wise money",
+    images: "https://wise-money.vercel.app/public/og-image.jpg",
+  }
 };
-export const openGraph: OpenGraph = {
-  title: "Wise Money",
-  description: "Gérez vos finances personnelles facilement avec Wise Money.",
-  url: "https://wise-money.vercel.app",
-  siteName: "Wise Money",
-  images: "https://wise-money.vercel.app/og-image.jpg",
-}
 
 export default function RootLayout({
   children,
