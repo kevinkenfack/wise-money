@@ -103,12 +103,11 @@ const columns: ColumnDef<TransactionHistoryRow>[] = [
       <div
         className={cn(
           "capitalize rounded-lg text-center p-2",
-          row.original.type === "income" &&
-            "bg-emerald-400/10 text-emerald-500",
+          row.original.type === "income" && "bg-emerald-400/10 text-emerald-500",
           row.original.type === "expense" && "bg-red-400/10 text-red-500"
         )}
       >
-        {row.original.type}
+        {row.original.type === "income" ? "Revenue" : "Dépense"}
       </div>
     ),
   },
