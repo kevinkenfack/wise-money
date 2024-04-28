@@ -70,14 +70,14 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
         type,
       });
 
-      toast.success(`Category ${data.name} créé avec succès 🎉`, {
+      toast.success(`Categorie ${data.name} créé avec succès 🎉`, {
         id: "create-category",
       });
 
       successCallback(data);
 
       await queryClient.invalidateQueries({
-        queryKey: ["categories"],
+        queryKey: ["category"],
       });
 
       setOpen((prev) => !prev);

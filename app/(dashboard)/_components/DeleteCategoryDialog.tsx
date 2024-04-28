@@ -35,7 +35,7 @@ function DeleteCategoryDialog({ category, trigger }: Props) {
       });
 
       await queryClient.invalidateQueries({
-        queryKey: ["categories"],
+        queryKey: ["category"],
       });
     },
     onError: () => {
