@@ -56,7 +56,7 @@ const columns: ColumnDef<TransactionHistoryRow>[] = [
   {
     accessorKey: "category",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Category" />
+      <DataTableColumnHeader column={column} title="Categorie" />
     ),
     filterFn: (row, id, value) => {
       return value.includes(row.getValue(id));
