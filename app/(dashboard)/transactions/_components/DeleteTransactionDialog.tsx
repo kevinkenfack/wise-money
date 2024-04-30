@@ -45,7 +45,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Êtes-vous sûr ?</AlertDialogTitle>
+          <AlertDialogTitle>Tu est sûr ?</AlertDialogTitle>
           <AlertDialogDescription>
           Cette action ne peut être annulée. Cette action supprimera définitivement votre
           transaction
