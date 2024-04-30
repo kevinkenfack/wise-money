@@ -52,7 +52,7 @@ function DeleteTransactionDialog({ open, setOpen, transactionId }: Props) {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>Annuler</AlertDialogCancel>
           <AlertDialogAction
             onClick={() => {
               toast.loading("Suppression de la transaction...", {
