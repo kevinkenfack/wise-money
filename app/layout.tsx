@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Wise money",
-  description: "Gérez vos finances personnelles facilement avec Wise Money.",
+  description: "Gérez vos finances personnelles facilement avec Wise Money. By Kevin Kenfack.",
   openGraph: {
     title: "Wise money",
     description: "Gérez vos finances personnelles facilement avec Wise Money.",
