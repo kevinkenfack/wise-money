@@ -9,10 +9,10 @@ import { NextSeo } from 'next-seo';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wise money",
-  description: "Gérez vos finances personnelles facilement avec Wise Money. By Kevin Kenfack.",
+  title: "Wise money | By Kevin Kenfack",
+  description: "Gérez vos finances personnelles facilement avec Wise Money.",
   openGraph: {
-    title: "Wise money",
+    title: "Wise money | By Kevin Kenfack",
     description: "Gérez vos finances personnelles facilement avec Wise Money.",
     url: "https://wise-money.vercel.app",
     siteName: "Wise money",
