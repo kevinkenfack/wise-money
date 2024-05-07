@@ -10,10 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Wise money | By Kevin Kenfack",
-  description: "Gérez vos finances personnelles facilement avec Wise Money.",
+  description: "Optimisez la gestion de vos finances personnelles avec Wise Money. Sachez précisément comment votre argent est utilisé.",
   openGraph: {
     title: "Wise money | By Kevin Kenfack",
-    description: "Gérez vos finances personnelles facilement avec Wise Money.",
+    description: "Optimisez la gestion de vos finances personnelles avec Wise Money. Sachez précisément comment votre argent est utilisé.",
     url: "https://wise-money.vercel.app",
     siteName: "Wise money",
     images: "https://wise-money.vercel.app/og-image.jpg",
