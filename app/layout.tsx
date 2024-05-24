@@ -6,6 +6,7 @@ import RootProviders from "@/components/providers/RootProviders";
 import { Toaster } from "@/components/ui/sonner";
 import { NextSeo } from 'next-seo';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Toaster richColors position="bottom-right" />
           <RootProviders>{children}</RootProviders>
           <Analytics />
+          <SpeedInsights/>
         </body>
       </html>
     </ClerkProvider>
